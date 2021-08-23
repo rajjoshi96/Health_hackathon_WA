@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -10,12 +10,13 @@
         <title>Iron Woman</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href=".css">
     </head>
     <body>
-        <h2> Iron Woman </h2>
-        <div class = "Class1">
-
+        <div class = "container">
+            <div class="brand-logo"></div>
+            <div class="brand-title">Iron Woman</div>
+            <div class='inputs'>
             <form action="/action_page.php">
                 <label for="Haemoglobin">Haemoglobin (Hb)</label>
                 <input type="text" id="fname" name="fname"><br><br>
@@ -57,7 +58,7 @@
                 <br>
                 <label for="Swimming">Swimming (time in minutes):</label>
                 <input type="number" id="Swimming" name="Swimming" min="1" max="500"> 
-
+                <br>
                 <label for="Periods">Last Period days: </label>
                 <input type="number" id="Periods" name="Periods" min="1" max="60">
                 
@@ -91,14 +92,77 @@
                 </select>
                 <br>
                 <br>
+
+
+                <label for="Iron_deficient">Do you have iron deficiency?</label>
+
+                <select name="Iron_deficient" id="Iron_deficient">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+
+                <br>
+                <br>
+                <label for="Iron_supplement">Do you consume Iron Supplements recently?</label>
+
+
+                <select name="Iron_supplement" id="Iron_supplement">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <br>
+                <br>
+
+                <label for="Iron_last">Did you have iron deficiency in last 3 months?</label>
+
+                <select name="Anaemic_last" id="Anaemic_last">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <br>
+                <br>
+                <label for="HMB">Do you have heavy blood flow in menstrual cycle?</label>
+
+                <select name="HMB" id="HMB">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+
+                <br>
+                <br>
+
+                
                 <input type="submit" value="Submit">
+
+                <br>
+                <br>
+
             </form>
             
-            <p>Click the "Submit" button and the form-data will be sent to a page on the 
-            server called "action_page.php".</p>
-
+            <p>Click the "Submit" to get your results.</p>
+            </div>
         </div>
         
         <script src="" async defer></script>
     </body>
 </html>
+
+
+
+
+<!--
+
+
+<div class="container">
+  <div class="brand-logo"></div>
+  <div class="brand-title">TWITTER</div>
+  <div class="inputs">
+    <label>EMAIL</label>
+    <input type="email" placeholder="example@test.com" />
+    <label>PASSWORD</label>
+    <input type="password" placeholder="Min 6 charaters long" />
+    <button type="submit">LOGIN</button>
+  </div>
+  <a href="https://twitter.com/prathkum">MADE BY PRATHAM</a>
+</div>
+-->
